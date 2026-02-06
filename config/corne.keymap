@@ -8,14 +8,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&status_screen {
-    layer_widget = &layer_status;
-    output_widget = &output_status;
-    battery_widget = &battery_status;
-    wpm_widget = &wpm_status;
-};
-
 / {
+    chosen {
+        zmk,layer_widget = &layer_status;
+        zmk,output_widget = &output_status;
+        zmk,battery_widget = &battery_status;
+        zmk,wpm_widget = &wpm_status;
+    };
+
     combos {
         compatible = "zmk,combos";
 
