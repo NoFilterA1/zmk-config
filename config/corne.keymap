@@ -16,6 +16,22 @@
         zmk,wpm_widget = &wpm_status;
     };
 
+    wpm_status: wpm_status {
+        compatible = "zmk,wpm-indicator-widget";
+    };
+
+    layer_status: layer_status {
+        compatible = "zmk,layer-indicator-widget";
+    };
+
+    output_status: output_status {
+        compatible = "zmk,output-indicator-widget";
+    };
+
+    battery_status: battery_status {
+        compatible = "zmk,battery-indicator-widget";
+    };
+
     combos {
         compatible = "zmk,combos";
 
